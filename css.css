@@ -1,0 +1,87 @@
+/* Унікальний фон для кнопки годування */
+.menu-button.feed-btn {
+    background: linear-gradient(135deg, #a8ff78, #78ffd6) !important; /* Ніжно-зелений градієнт під жабку */
+    border: 2px solid #52b788;
+    color: #1b4332;
+}
+
+.menu-button.feed-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(82, 183, 136, 0.4);
+}
+
+/* Стилі для гри з годуванням */
+.feed-container {
+    text-align: center;
+    padding: 15px;
+}
+.food-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+.food-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+.food-item:hover {
+    transform: scale(1.1);
+    background: #f0fff4;
+}
+.progress-bar-container {
+    background: #eee;
+    border-radius: 10px;
+    width: 80%;
+    margin: 15px auto;
+    height: 20px;
+    overflow: hidden;
+}
+.progress-bar {
+    background: #52b788;
+    height: 100%;
+    width: 0%; /* Початковий рівень ситості 50% */
+    transition: width 0.3s ease;
+}
+/* Плавный переход цвета для всего сайта */
+body {
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+body, html {
+    transition: background-color 0.8s ease, color 0.8s ease !important;
+}
+
+body.vibe-rose-garden {
+    background-color: #2b0d19 !important;
+    color: #fce4ec !important;
+}
+
+/* Если у тебя есть внутренний блок-обертка (например, .app или .container) */
+body.vibe-rose-garden .container,
+body.vibe-rose-garden #app {
+    background-color: transparent !important;
+}
+/* Добавь этот блок к своему CSS */
+body.vibe-rose-garden .page {
+    /* Можно оставить прозрачным или сделать чуть темнее для глубины */
+    background: transparent !important; 
+}
+
+/* Если нужно сделать карточки и блоки чуть более «розовыми» или темными в этой теме */
+body.vibe-rose-garden .menu-button,
+body.vibe-rose-garden .kitten-area,
+body.vibe-rose-garden .message {
+    background: rgba(89, 32, 54, 0.4) !important;
+    border-color: rgba(252, 228, 236, 0.2) !important;
+    color: #fce4ec !important;
+}
+
+body.vibe-rose-garden .menu-button:hover {
+    background: rgba(89, 32, 54, 0.7) !important;
+}
